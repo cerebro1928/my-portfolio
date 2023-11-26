@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Surya Prasad Kaushal - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Surya Prasad Kaushal
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          suryaprasad.3@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +91-9582549463
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/download_coder.jpg" class="profile_image" />
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Surya Prasad Kaushal ! <img src="html_finalprojimages/200w.gif" width="60px"/>
+          </h1>
+          <p>
+            I am a data scientist with 6 years of experience in solving business and enginnering problems using data science.
+            I have worked on and developed AI/ML applications while collaborating with global teams.
+            Currently looking for a challenging role in a fast paced environment.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/python.jpg"/>
+            <h6>Python</h6>
+            <p>6 years experience</p>
+          </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/machine_learning.jpg"/>
+            <h6>AI/ML</h6>
+            <p>6 years experience</p>
+        </div>
+
+        <div class="skill">
+            <img src="html_finalprojimages/google_cloud.png"/>
+            <h6>Google Cloud</h6>
+            <p>1.5 years experience</p>
+        </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>eCRM</h3>
+            <ul>
+              <li>Created data pipelines from google cloud to Salesforce Data Cloud for marketing activities</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>ML based Customer Targeting</h3>
+            <ul>
+              <li>Developed custom pytorch Neural network with autoencoder to predict product purchase in next 3 months.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>ML on Edge Device</h3>
+            <ul>
+              <li>Deployed YOLO computer vision model on NVidia Jetson NX using Amazon Greengrass Service</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Surya is a very quick learner and quickly grasps key concepts. 
+          He is able to quickly breakdown large tasks into smaller subtasks for execution.
+          He has handled a team of 5 people for a period of 6 months while direcly reporting to Marketing Director.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Surya has been an awesome experience. 
+          He listens to all the problems being faced and tries to provide solution.
+          He also tries to explain higher management about actual roles and reponsibilities of the team which makes our life easier.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I have worked with Surya on ML based customer targeting.
+          He is very meticulus in his work and tries to give his best in everything he does.
+          He is an asset where-ever he is working. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a  recommendation!</h3>
+      <button onclick="showPopup(true)">Ok</button>
+    </div>
+  </body>
+</html>
