@@ -4,6 +4,10 @@ body {
 
 /* Navigation Bar */
 
+.intro_h1_para {
+  margin-left: 50%;
+}
+
 #home {
   background-color:  #7600bc;
   padding-bottom: 1cm;
@@ -19,7 +23,7 @@ body {
   color: lightgray;
   margin: 10px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 24px;
   text-decoration:none;
 }
 
@@ -90,27 +94,32 @@ h2 {
 /* About Me */
 
 .about-me {
+  margin-top: 5px;
   display: flex;
   align-items: center;
+  text-align: top;
 }
 
 #about-me h1 {
   font-size: 65px;
-  margin-top: 90px;
+  margin-left : 50px;
+  margin-top: 30px;
   color: #7600bc;
 }
 
 #about-me p {
   font-size: 25px;
   color: rgb(128, 128, 128);
-  margin-top: -1cm;
+  margin-top: 1%;
+  margin-left: 50px;
 }
 
 .profile_image {
-  width: 500px;
+  margin-top : 10px;
+  width: 400px;
   height: fit-content;
   vertical-align: middle;
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 /* Skills */
@@ -162,20 +171,56 @@ h2 {
 
 /* Projects */
 
-.projects-container {
-  margin-top: 30px;
+.projects h3 {
+  /* margin-left: 5%; */
+  display: inline-block;
+  text-decoration: bold;
+  font-size: 25px;
+  color: #7600bc;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  /* position: relative; */
+  ;
+}
+.projects h3 .left_text {
+  position: absolute;
+  margin-left:5%;
+}
+
+.projects h3 .right_text {
+  position: absolute;
+  right: 5%;
+}
+
+.experience-container {
+  margin-top: 15px;
   margin-left: 60px;
 }
 
-.projects-container hr {
+.experience-container hr {
   border: 1px solid lightgray;
-  width: 75%;
-  margin-left: 5cm;
+  width: 85%;
+  margin-left: 150px;
+  margin-right:150px;
 }
 
-.project-card {
-  margin: 0 15px 15px 30px;
-  padding-bottom: 5px;
+.experience-card h3{
+  /* margin: 0 10px 15px 30px; */
+  /* padding-bottom: 5px; */
+  font-size: 25px;
+  
+}
+
+.experience-card h4{
+  margin-top: 0;
+  margin-bottom:0;
+  /* padding-bottom: 5px; */
+  font-size: 25px;
+  margin-left: 5%;
+}
+
+.experience-card ul {
+  margin-left: 5%;
 }
 
 .project-card h3 {
@@ -186,6 +231,10 @@ h2 {
 .project-card li {
   font-size: 20px;
   margin-left: 30px;
+}
+
+#maruti {
+  margin-top : 5%;
 }
 
 /* Recommendations */
@@ -206,8 +255,8 @@ h2 {
   padding: 1rem;
   background-color: #fff;
   border-radius: 11px;
-  box-shadow: 0 3px 10px var(--primary-shadow);
-  padding: 20px;
+  box-shadow: 0 3px 5px var(--primary-shadow);
+  padding: 10px;
   margin: 10px;
   border:1px solid gray;
   font-size: 18px;

@@ -36,14 +36,14 @@
     <!-- About Me -->
     <section id="about-me" class="container">
       <div>
-        <img src="html_finalprojimages/download_coder.jpg" class="profile_image" />
+        <img src="html_finalprojimages/coder.jpg" class="profile_image"/>
       </div>
 
       <div>
           <h1>
-            Hi, I'm Surya Prasad Kaushal ! <img src="html_finalprojimages/200w.gif" width="60px"/>
+            Hi, I'm Surya Prasad Kaushal !
           </h1>
-          <p>
+          <p id="intro_h1_para">
             I am a data scientist with 6 years of experience in solving business and engineering problems using data science.
             I have worked on and developed AI/ML applications while collaborating with global teams.
             Looking for a challenging role in a fast paced environment.
@@ -57,8 +57,8 @@
       <div style="clear:both;"></div>
 
       <div class="all_skills">
-        <div class="skill">
-          <img src="html_finalprojimages/html5.png"/>
+        <!-- <div class="skill"> -->
+          <!-- <img src="html_finalprojimages/html5.png"/>
           <h6>HTML</h6>
           <p>2 years experience</p>
         </div>  
@@ -67,7 +67,7 @@
           <img src="html_finalprojimages/js.jpeg"/>
           <h6>JavaScript</h6>
           <p>3 years experience</p>
-        </div>  
+        </div>   -->
 
         <div class="skill">
             <img src="html_finalprojimages/python.jpg"/>
@@ -78,7 +78,7 @@
         <div class="skill">
             <img src="html_finalprojimages/machine_learning.jpg"/>
             <h6>AI/ML</h6>
-            <p>6 years experience</p>
+            <p>5 years experience</p>
         </div>
 
         <div class="skill">
@@ -91,34 +91,95 @@
     </section>
           
     <!-- Projects -->
+    <section class="experience" id="experience">
     <section class="projects" id="projects">
       <h2>
-        Projects
+        Experience
       </h2>
       <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>eCRM</h3>
-            <ul>
-              <li>Created data pipelines from google cloud to Salesforce Data Cloud for marketing activities</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>ML based Customer Targeting</h3>
+      <h3>
+        <span class="left_text">LG Electronics</span>
+        <span class="right_text">July 2022 ~ Present</span>
+      </h3>
+        <div id="experience-container" class="experience-container">
+          <div class="experience-card">
+            <hr>
+            <h4>ML based Customer Targeting</h4>
             <ul>
               <li>Developed custom pytorch Neural network with autoencoder to predict product purchase in next 3 months.</li>
+              <l1>Developed ML inference pipeline to score complete customer base.</l1>
+              <li>Created ML pipelines for Customer targeting using Anamoly Detection and H2O AutoML as well.</li>
+              <li>Developed and evaluated Single as well as multi-label ML models. Single label models performance found better. </li>
+              <li>Model performance found comparable for Custom pytorch model and H2O AutoML. </li>
             </ul>
           </div>
           <hr>
-          <div class="project-card">
-            <h3>ML on Edge Device</h3>
+          <div class="experience-card">
+            <h4>eCRM</h4>
             <ul>
-              <li>Deployed YOLO computer vision model on NVidia Jetson NX using Amazon Greengrass Service</li>
+              <li>Created, maintained and tested batch data pipelines from On-premises Oracle database to BigQuery for Marketing consented customer base.</li>
+              <li>Developed customer segmentation logic and decided journey flow for marketing campaigns. </li>
+              <li>Managed development of data pipeline for marketing consent customers along with entity resolution. </li>
+              <li>Delivered customer segment data on google cloud storage to be pulled by marketing cloud for activation.</li>
+              <li>Provided guidelines to implementation partner for setting proper UTMs for cusotmer tracking.</li>
+              <li>Decided on ways to increase ROI leveraging call centers.</li>
+              <li>Managed backend(php) modification for landing pages to automate lead generation for calling.</li>
+              <li>Decided ways of tracking Leads, Visitors and Sales. Leads tracking is done using Calling CRM API, visitor tracking using Google Analytics(GA) and Sales tracking using combination of GA, Calling CRM API and Magento Sales data.</li>
+              <li>Sale attribution found to be challenging for campaigns and channels. So, sale attribution was performed based on business logic.</li>
             </ul>
           </div>
-    </div>
+          <hr>
+          <div class="experience-card">
+            <h4>Video Analytics</h5>
+            <ul>
+              <li>Supported development of Computer vision(CV) model for Brand Shop Visitor Tracking. </li>
+              <li>Evaluated perforamnce of multiple pre-trained CV models in terms of accuracy and inference time. Found YOLO V5 meeting all requirements. </li>
+              <li>Learnt using AWS Greengrass Service for deploying ML models on Edge Devices. </li>
+              <li>Deployed CV model on NVidia Jetson NX using AWS Greengrass Service.</li>
+              <li>Developed automated checks ensuring normal working condition of solution. </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="experience-card">
+            <h4>Dashboards</h5>
+            <ul>
+              <li>Explored data warehouse for raw Online Sales Data. </li>
+              <li>Supported data preparation from L0 to L2 level for dashboard. </li>
+              <li>Developed data pipeline to extract data from On-premises data warehouse and store in Google Cloud.</li>
+              <li>Developed Optical charecter recognition based Robotic Process Automation (RPA) to extract data from data warehouse front-end and store in Google Cloud.</li>
+              <li>Developed consented customers details dashboard for marketing teams. </li>
+            </ul>
+          </div>
+        </div>
+        <h3>
+          <span class="left_text">Maruti Suzuki</span>
+          <span class="right_text">June 2014 ~ July 2022</span>
+        </h3>
+        <div id="experience-container" class="experience-container">
+          <div class="experience-card">
+            <hr>
+            <h4>Vehicle Performance Evaluation</h4>
+            <ul>
+              <li>Developed ML pipeline to identify critical components during frontal crash using PCA. </li>
+              <li>Design and fastening(spotwelds etc.) for such critical components were improved by design teams. </li>
+              <li>Component failure prediction through strength Simulation data using XGBoost. </li>
+              <li>Side Crash deformation prediction using Artificial Neural Network (ANN) using Crash simulation data. Project was initiated to reduce simulation costs and time. </li>
+            </ul>
+          </div>
+          <hr>
+          <div class="experience-card">
+            <h4>Process Automation</h4>
+            <ul>
+              <li>Developed scripts on TCL for Hypermesh(Finite Element modeling Software) to automate lengthy manual tasks.</li>
+              <li>Developed VBA scripts for automated post-processing of simulation data.</li>
+              <li>Test track road condition encoding Image data for suspension simulation. Alternate option was expensive in terms of time and cost. </li>
+              <li>Setup Aspect based sentiment analysis control chart for customer reviews on public data.</li>
+            </ul>
+          </div>
+          
+        </div>  
+
+    </section>
     </section>
     <div style="clear:both;"></div>
 
@@ -131,21 +192,18 @@
           <span>&#8220;</span>
           Surya is a very quick learner and quickly grasps key concepts. 
           He is able to quickly breakdown large tasks into smaller subtasks for execution.
-          He has handled a team of 5 people for a period of 6 months while direcly reporting to Marketing Director.
           <span>&#8221;</span>
         </div>
         <div class="recommendation">
           <span>&#8220;</span>
-          Working with Surya has been an awesome experience. 
-          He listens to all the problems being faced and tries to provide solution.
-          He also tries to explain higher management about actual roles and reponsibilities of the team which makes our life easier.
+          Working with Surya has been a great experience. 
+          He listens to all the problems and tries to provide solution.
           <span>&#8221;</span>
         </div>
         <div class="recommendation">
           <span>&#8220;</span>
-          I have worked with Surya on ML based customer targeting.
+          I have worked with Surya on several projects.
           He is very meticulus in his work and tries to give his best in everything he does.
-          He is an asset where-ever he is working. 
           <span>&#8221;</span>
         </div>
       </div>
